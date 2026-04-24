@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian Kode Pos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Form Registrasi</a>
+        <a href="kodepos.html">Cari Kode Pos</a>
+    </nav>
+
+    <div class="wadah-form">
+        <h2>Cari Kode Pos</h2>
+        <br>
+        <div class="grup-input">
+            <label for="provinsi">Provinsi:</label>
+            <input type="text" id="provinsi" placeholder="Contoh: Jawa Timur">
+        </div>
+        
+        <div class="grup-input">
+            <label for="kabupaten">Kabupaten/Kota:</label>
+            <input type="text" id="kabupaten" placeholder="Contoh: Surabaya">
+        </div>
+
+        <div class="grup-input">
+            <label for="kecamatan">Kecamatan:</label>
+            <input type="text" id="kecamatan" placeholder="Contoh: Gubeng">
+        </div>
+
+        <button onclick="cariKode()">Cari</button>
+    </div>
+
+    <!-- Tempat menampilkan hasil -->
+    <div id="hasilPencarian" class="wadah-form" style="margin-top: 20px; display: none;">
+        <h3>Hasil:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Provinsi</th>
+                    <th>Kabupaten/Kota</th>
+                    <th>Kecamatan</th>
+                    <th>Kode Pos</th>
+                </tr>
+            </thead>
+            <tbody id="tabelHasil">
+                <!-- Baris tabel muncul di sini -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/kodepos.js"></script>
+</body>
+</html>

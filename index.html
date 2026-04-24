@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Mahasiswa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Form Registrasi</a>
+        <a href="kodepos.html">Cari Kode Pos</a>
+    </nav>
+
+    <div class="wadah-form">
+        <h2>Registrasi Mahasiswa</h2>
+        <br>
+        <form id="formRegistrasi">
+            <div class="grup-input">
+                <label for="nama">Nama Mahasiswa:</label>
+                <input type="text" id="nama" placeholder="Ketik nama mahasiswa..." autocomplete="off">
+                <ul id="kotakRekomendasi" class="daftar-rekomendasi"></ul>
+            </div>
+            
+            <div class="grup-input">
+                <label for="nim">NIM:</label>
+                <input type="text" id="nim" readonly placeholder="NIM akan terisi otomatis">
+            </div>
+
+            <div class="grup-input">
+                <label for="matkul">Mata Kuliah:</label>
+                <input type="text" id="matkul" placeholder="Masukkan mata kuliah">
+            </div>
+
+            <div class="grup-input">
+                <label for="dosen">Dosen Pengampu:</label>
+                <input type="text" id="dosen" placeholder="Masukkan nama dosen">
+            </div>
+
+            <button type="button" onclick="alert('Data berhasil disimpan!')">Daftar</button>
+        </form>
+    </div>
+
+    <script src="js/registrasi.js"></script>
+</body>
+</html>
