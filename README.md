@@ -41,12 +41,3 @@ TM-6/
 ```
 
 ---
-
-## Teknologi yang Digunakan
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla, tanpa framework)
-
----
-
