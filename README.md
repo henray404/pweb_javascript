@@ -7,7 +7,7 @@ Semester: 4
 
 ## Deskripsi Tugas
 
-Proyek ini merupakan hasil pengerjaan Tugas Mandiri ke-6 pada mata kuliah Pemrograman Web. Terdapat dua fitur utama yang dikembangkan menggunakan HTML, CSS, dan JavaScript murni tanpa framework tambahan.
+Tugas Mandiri ke-6 pada mata kuliah Pemrograman Web. Terdapat dua fitur utama yang dikembangkan menggunakan HTML, CSS, dan JavaScript murni tanpa framework tambahan.
 
 ---
 
@@ -42,14 +42,6 @@ TM-6/
 
 ---
 
-## Cara Menjalankan
-
-Tidak diperlukan instalasi atau server khusus. Cukup buka file `index.html` pada browser modern (Chrome, Firefox, Edge) secara langsung.
-
-Navigasi antar halaman tersedia melalui menu navigasi yang terdapat di bagian atas setiap halaman.
-
----
-
 ## Teknologi yang Digunakan
 
 - HTML5
@@ -58,6 +50,3 @@ Navigasi antar halaman tersedia melalui menu navigasi yang terdapat di bagian at
 
 ---
 
-## Catatan Teknis
-
-Data mahasiswa dan data kode pos yang digunakan pada proyek ini bersifat statis (hardcoded) di dalam file JavaScript sebagai simulasi. Pada implementasi nyata, data tersebut seharusnya diambil dari server melalui API atau database.
