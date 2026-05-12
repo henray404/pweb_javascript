@@ -7,41 +7,48 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <!-- navigasi halaman -->
     <nav>
         <a href="index.html">Form Registrasi</a>
         <a href="kodepos.html">Cari Kode Pos</a>
     </nav>
 
+    <!-- wadah formulir utama -->
     <div class="wadah-form">
         <h2>Registrasi Mahasiswa</h2>
         <br>
         <form id="formRegistrasi">
+            <!-- bagian input nama -->
             <div class="grup-input">
                 <label for="nama">Nama Mahasiswa:</label>
                 <input type="text" id="nama" placeholder="Ketik nama mahasiswa..." autocomplete="off">
                 <ul id="kotakRekomendasi" class="daftar-rekomendasi"></ul>
             </div>
             
+            <!-- bagian input nim -->
             <div class="grup-input">
                 <label for="nim">NIM:</label>
                 <input type="text" id="nim" readonly placeholder="NIM akan terisi otomatis">
             </div>
 
+            <!-- bagian input matkul -->
             <div class="grup-input">
                 <label for="matkul">Mata Kuliah:</label>
                 <input type="text" id="matkul" placeholder="Masukkan mata kuliah">
             </div>
 
+            <!-- bagian input dosen -->
             <div class="grup-input">
                 <label for="dosen">Dosen Pengampu:</label>
                 <input type="text" id="dosen" placeholder="Masukkan nama dosen">
             </div>
 
+            <!-- tombol daftar -->
             <button type="button" onclick="alert('Data berhasil disimpan!')">Daftar</button>
         </form>
     </div>
 
+    <!-- memuat skrip -->
     <script src="js/registrasi.js"></script>
 </body>
 </html>

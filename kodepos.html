@@ -7,34 +7,39 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <!-- navigasi halaman -->
     <nav>
         <a href="index.html">Form Registrasi</a>
         <a href="kodepos.html">Cari Kode Pos</a>
     </nav>
 
+    <!-- wadah formulir pencarian -->
     <div class="wadah-form">
         <h2>Cari Kode Pos</h2>
         <br>
+        <!-- bagian input provinsi -->
         <div class="grup-input">
             <label for="provinsi">Provinsi:</label>
             <input type="text" id="provinsi" placeholder="Contoh: Jawa Timur">
         </div>
         
+        <!-- bagian input kabupaten -->
         <div class="grup-input">
             <label for="kabupaten">Kabupaten/Kota:</label>
             <input type="text" id="kabupaten" placeholder="Contoh: Surabaya">
         </div>
 
+        <!-- bagian input kecamatan -->
         <div class="grup-input">
             <label for="kecamatan">Kecamatan:</label>
             <input type="text" id="kecamatan" placeholder="Contoh: Gubeng">
         </div>
 
+        <!-- tombol cari -->
         <button onclick="cariKode()">Cari</button>
     </div>
 
-    <!-- Tempat menampilkan hasil -->
+    <!-- tampilan hasil pencarian -->
     <div id="hasilPencarian" class="wadah-form" style="margin-top: 20px; display: none;">
         <h3>Hasil:</h3>
         <table>
@@ -47,11 +52,12 @@
                 </tr>
             </thead>
             <tbody id="tabelHasil">
-                <!-- Baris tabel muncul di sini -->
+                <!-- baris tabel muncul di sini -->
             </tbody>
         </table>
     </div>
 
+    <!-- memuat skrip -->
     <script src="js/kodepos.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* gaya universal */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,12 +6,14 @@
     font-family: Arial, sans-serif;
 }
 
+/* gaya latar belakang utama */
 body {
     background-color: #f4f4f9;
     color: #333;
     padding: 20px;
 }
 
+/* gaya navigasi */
 nav {
     background-color: #0056b3;
     padding: 15px;
@@ -29,6 +32,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* gaya wadah formulir */
 .wadah-form {
     background: white;
     padding: 20px;
@@ -38,6 +42,7 @@ nav a:hover {
     margin: 0 auto;
 }
 
+/* gaya grup input */
 .grup-input {
     margin-bottom: 15px;
     position: relative;
@@ -56,6 +61,7 @@ input[type="text"], select {
     border-radius: 4px;
 }
 
+/* gaya tombol */
 button {
     background-color: #28a745;
     color: white;
@@ -71,6 +77,7 @@ button:hover {
     background-color: #218838;
 }
 
+/* gaya kotak rekomendasi */
 .daftar-rekomendasi {
     list-style: none;
     margin: 0;
@@ -95,6 +102,7 @@ button:hover {
     background-color: #f0f0f0;
 }
 
+/* gaya tabel */
 table {
     width: 100%;
     border-collapse: collapse;

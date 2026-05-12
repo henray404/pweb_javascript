@@ -1,4 +1,4 @@
-// Data dummy daerah dan kode pos
+// data dummy daerah dan kode pos
 const dataKodePos = [
     { provinsi: "Jawa Timur", kabupaten: "Surabaya", kecamatan: "Gubeng", kode: "60281" },
     { provinsi: "Jawa Timur", kabupaten: "Surabaya", kecamatan: "Sukolilo", kode: "60111" },
@@ -16,15 +16,15 @@ function cariKode() {
     let tabelHasil = document.getElementById("tabelHasil");
     let wadahHasil = document.getElementById("hasilPencarian");
     
-    // Kosongkan tabel hasil sebelumnya
+    // kosongkan tabel hasil sebelumnya
     tabelHasil.innerHTML = "";
 
-    // Filter data
+    // filter data
     let hasilCari = [];
     for (let i = 0; i < dataKodePos.length; i++) {
         let data = dataKodePos[i];
         
-        // Pengecekan sederhana: jika input diisi, teks harus cocok. Jika kosong, abaikan filter tersebut.
+        // pengecekan sederhana: jika input diisi, teks harus cocok. jika kosong, abaikan filter tersebut.
         let cocokProv = inputProv === "" || data.provinsi.toLowerCase().includes(inputProv);
         let cocokKab = inputKab === "" || data.kabupaten.toLowerCase().includes(inputKab);
         let cocokKec = inputKec === "" || data.kecamatan.toLowerCase().includes(inputKec);
@@ -34,7 +34,7 @@ function cariKode() {
         }
     }
 
-    // Jika ada hasil, tampilkan ke tabel
+    // jika ada hasil, tampilkan ke tabel
     if (hasilCari.length > 0) {
         for (let j = 0; j < hasilCari.length; j++) {
             let item = hasilCari[j];
@@ -49,12 +49,12 @@ function cariKode() {
             tabelHasil.appendChild(baris);
         }
     } else {
-        // Jika tidak ketemu
+        // jika tidak ketemu
         let barisKosong = document.createElement("tr");
         barisKosong.innerHTML = `<td colspan="4" style="text-align: center;">Data tidak ditemukan.</td>`;
         tabelHasil.appendChild(barisKosong);
     }
 
-    // Munculkan wadah tabel
+    // munculkan wadah tabel
     wadahHasil.style.display = "block";
 }
